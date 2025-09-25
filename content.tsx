@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Nav.css'
 
-function Nav() {
+function Content() {
   const [count, setCount] = useState(0)
 
   return (
@@ -28,4 +28,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default Content
