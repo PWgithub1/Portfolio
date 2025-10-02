@@ -1,0 +1,65 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.project {
+  position: relative;
+  border-radius: 16px;
+  padding: 4px;
+  width: 90%;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ff0000, #0011ff, #0011ff, #ff0000);
+  background-size: 200% 200%;
+  animation: shine 6s linear infinite;
+  margin: 16px auto;
+  box-sizing: border-box;
+}
+
+.project-content {
+  background: black;
+  border-radius: 12px;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  box-sizing: border-box;
+}
+
+.block h2 {
+  margin: 0 0 8px 0;
+}
+
+.block p {
+  margin: 0;
+}
+
+.small-projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.project.small {
+  width: calc(90% / 3 - 10px);
+  min-width: 180px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
