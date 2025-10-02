@@ -1,0 +1,25 @@
+header {
+  position: relative;
+  z-index: 10;
+
+  width: 100vw;
+  height: 100px;
+  font-size: 3em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #ff0000 0%, #0011ff 50%, #0011ff 50%, #ff0000 100%);
+  background-size: 200% 200%;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
